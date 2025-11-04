@@ -1,7 +1,7 @@
 // let message: string = "Vishesh";
 // console.log(message);
 
-// //Primitive Data-types:
+// //Primitive Data-types:Directly Copied
 // let name: string = "Vishesh";
 // let age: number = 12;
 // let isDev: boolean = true;
@@ -16,8 +16,14 @@
 // if(typeof data1 === "string") console.log(data1.toUpperCase());
 
 
-// Non-primitiveData-Type:
+// Explicit-Type and Types inference:
+//Ex:
+let name: string = "Vishes";
+//Inference:
+let name1 = "vishsh";
 
+
+// Reference [],{},():Not Directly Copied
 // Array:
 let arr: number[] = [10, 20, 30];
 let fruits: string[] = ["apple","banana","mango"];
@@ -60,3 +66,11 @@ const graph : [x:number, y: number] = [55.12,12.43];
 const [x,y] = graph;
 
 console.log(x+" "+y)
+
+
+// Enums:
+enum Days{
+    x,y
+}
+
+console.log(Days.x) // Output is 0;
