@@ -60,3 +60,12 @@ const innerFunction = outer();
 innerFunction();
    
 
+// By Shreyian Knowldege:
+function hnow(name: string, cb : (args: string) => void) {
+    console.log(name);
+    cb("jhellow")
+}
+
+hnow("vishesh", (args) => {
+    console.log(args)
+})
