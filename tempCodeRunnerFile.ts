@@ -1,2 +1,2 @@
-this.name = name
-        this.author = author
+
+    console.log(`${user.name} ${user.email} ${user.age} ${user.pass.toLocaleLowerCase

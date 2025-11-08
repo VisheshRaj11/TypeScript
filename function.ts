@@ -1,3 +1,4 @@
+import greet from "./export_import";
 // function greet(name: string): void {
 //     console.log(`Hellow ${name}`)
 // }
@@ -69,3 +70,23 @@ function hnow(name: string, cb : (args: string) => void) {
 hnow("vishesh", (args) => {
     console.log(args)
 })
+
+// Type Aliases: 
+// A function type alias describes the shape of a function — its parameter types and return type.
+type Bhai = (name: string) => string;
+
+ let SachinHellow: Bhai = (name) => {
+    return `Hellow ${name}`
+ }
+ let Vishesh: Bhai = (name) => {
+    return `Hellow ${name}`
+ }
+
+console.log(SachinHellow("Sachin"));
+console.log(Vishesh("Sachin"));
+
+type Maths = (x: number, y: number) => number;
+
+let add: Maths = (x, y) => {return x+y}
+let sub: Maths = (x, y) => {return x-y}
+console.log(add(485,4775), sub(10, 5));
